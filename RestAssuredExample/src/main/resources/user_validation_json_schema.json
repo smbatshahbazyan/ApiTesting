@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Generated schema for Rest",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string",
+      "pattern": "^(male|female)$"
+    },
+    "status": {
+      "type": "string",
+      "pattern": "^(active|inactive)$"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "email",
+    "gender",
+    "status"
+  ]
+}
